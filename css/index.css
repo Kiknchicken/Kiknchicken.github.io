@@ -1,0 +1,147 @@
+/* Colors */
+:root {
+  --slategrey: #434B63;
+  --peach: #FFDBBA;
+  --coral: #F27935;
+  --turquoise: #4ECDC4;
+  --cream: #fef9ed;
+  --grey: #6C7A89;
+  --red: #f2354f;
+}
+
+/* General */
+html{
+  
+}
+
+body{
+  font-family: 'Playfair Display','Nunito', sans-serif;
+  background-image: url("../images/index_pic.jpeg");
+  background-repeat: no-repeat;
+  line-height: 2;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6{
+  display: flex;
+  justify-content: flex-start;
+  font-weight: normal;
+  font-size: 200%;
+  font-style: italic;
+  margin: 0px;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+/* Navbar */
+.topnav {
+  display: flex;
+  align-items: row;
+  overflow: hidden;
+  border-bottom: 3px solid #ddd;
+  font-family: 'Playfair Display','Nunito', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: italic;
+  color: #404040;
+
+}
+
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 18px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: var(--peach);
+}
+
+.navbar_header {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.topnav_background{
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+/* Containers */
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 60px 120px 0px 120px;
+  padding: 30px;
+}
+
+/* Home Page */
+.index_title{
+  display: flex;
+  font-size: 90px;
+  font-weight: normal;
+  font-style: normal;
+  margin-top: 270px;
+}
+
+/* Media Queries */
+@media (max-width: 575px){
+  html{
+    /* background-position: bottom;
+    background-repeat: no-repeat; */
+  }
+
+  h2{
+    font-size: 20px;
+  }
+
+  .index_title{
+    font-size: 60px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  .index_title{
+    margin-top: 270px;
+  }
+
+  html{
+    /* background-size: contain; */
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  html{
+    /* background-size: 160%; */
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  html{
+    /* background-size: contain; */
+  }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1300px) {
+  html{
+    /* background-size: contain; */
+  }
+}
+
+
+
+
